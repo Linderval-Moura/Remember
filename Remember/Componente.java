@@ -1,25 +1,35 @@
 package Remember;
 
+import java.util.Date;
+
 public class Componente {
 	
-	protected String nome;
-	protected double custo;
+	protected String titulo;
+	protected String descricao;
+	protected Date data;
 	
-	public String getNome() {
-		return nome;
+	public String getTitulo() {
+		return titulo;
 	}
 	
-	public double getCusto() {
-		return custo;
+	public String getDescricao() {
+		return descricao;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
+	public Date getData() {
+		return data;
 	}
 	
-	public void setCusto(double custo) {
-		this.custo = custo;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
-
+	
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	public void setData(Date data) {
+		this.data = data;
+	}
 
 }

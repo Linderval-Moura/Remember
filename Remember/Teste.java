@@ -9,7 +9,7 @@ public class Teste {
         String descricao = "Terminar a implementação do aplicativo";
         Date data = new Date(); // Data atual
 
-        Tarefa tarefa = new Tarefa(titulo, descricao, data);
+        TarefaSimples tarefa = new TarefaSimples(titulo, descricao, data);
 
         // Testar a atualização da tarefa
         System.out.println("Tarefa criada:");
@@ -20,8 +20,10 @@ public class Teste {
         // Simular atualização da data da tarefa
         Date novaData = new Date();
         tarefa.setData(novaData);
+        tarefa.setDescricao("Testar implementação");
 
         System.out.println("\nTarefa atualizada:");
+        System.out.println("Nova Descrição: " + tarefa.getDescricao());
         System.out.println("Nova data: " + tarefa.getData());
     }
 }
