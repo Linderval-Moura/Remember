@@ -1,12 +1,13 @@
 package Remember;
+
 import java.util.Date;
 
-public class Tarefa implements Observer {
+public class TarefaSimples extends Componente implements Observer {
     private String titulo;
     private String descricao;
     private Date data;
 
-    public Tarefa(String titulo, String descricao, Date data) {
+    public TarefaSimples(String titulo, String descricao, Date data) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.data = data;
@@ -17,7 +18,6 @@ public class Tarefa implements Observer {
 		
 		System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + data);
     
-		
 	}
 
 	public String getTitulo() {
