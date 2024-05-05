@@ -12,18 +12,6 @@ public class Testenovo {
 		System.out.println(t.getDescricao());
 		//System.out.println("");
 		
-		// s = new Misto();
-		// s.setNome("Misto Quente");
-		// s.custo = 15;
-		// s = new Queijo(s);
-		// s = new Queijo(s);
-		// s = new Queijo(s);
-		
-	
-				
-        // System.out.println(s.getNome());
-        // System.out.println(s.getCusto());
-
 	}
 
 }
