@@ -1,5 +1,7 @@
 package Remember;
 
+import java.util.Date;
+
 public abstract class Decorator extends Componente{
 	
 	private Componente componente;
@@ -9,13 +11,18 @@ public abstract class Decorator extends Componente{
 	}
 
 	@Override
-	public double getCusto() {
-		return  custo + componente.getCusto();
+	public String getTitulo() {
+		return componente.getTitulo() +", " +titulo;
 	}
 	
 	@Override
-	public String getNome() {
-		return componente.getNome() +", " +nome;
+	public String getDescricao() {
+		return componente.getDescricao() +", " +descricao;
+	}
+	
+	@Override
+	public Date getData() {
+		return componente.getData();
 	}
 
 }
