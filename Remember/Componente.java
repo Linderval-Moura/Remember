@@ -11,21 +11,21 @@ public class Componente {
 	public String getTitulo() {
 		return titulo;
 	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
 	
 	public String getDescricao() {
 		return descricao;
 	}
 	
-	public Date getData() {
-		return data;
-	}
-	
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-	
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+	
+	public Date getData() {
+		return data;
 	}
 	
 	public void setData(Date data) {

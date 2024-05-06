@@ -12,7 +12,7 @@ public abstract class Decorator extends Componente{
 
 	@Override
 	public String getTitulo() {
-		return  titulo + componente.getTitulo();
+		return componente.getTitulo() +", " +titulo;
 	}
 	
 	@Override

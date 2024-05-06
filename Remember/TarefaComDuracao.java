@@ -7,7 +7,6 @@ public class TarefaComDuracao extends Decorator implements Observer {
     public TarefaComDuracao(Componente componente) {
         super(componente);
 		titulo = "Tarefa Com Duracao ";
-        descricao = "Tarefa das 17h às 19h";
         data = new Date();
     }
 

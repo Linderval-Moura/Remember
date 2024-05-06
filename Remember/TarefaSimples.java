@@ -5,7 +5,7 @@ import java.util.Date;
 public class TarefaSimples extends Componente {
 
     public TarefaSimples() {
-		setTitulo("Completar projeto ");
+		setTitulo("Completar projeto");
 		setDescricao("Terminar a implementação do aplicativo");
 		setData(new Date());
     }
