@@ -1,12 +1,14 @@
 package Remember;
 
-import java.util.Date;
+//import java.text.SimpleDateFormat;
 
 public class Componente {
 	
 	protected String titulo;
 	protected String descricao;
-	protected Date data;
+	protected String data;
+	protected Double inicio;
+	protected Double fim;
 	
 	public String getTitulo() {
 		return titulo;
@@ -24,12 +26,34 @@ public class Componente {
 		this.descricao = descricao;
 	}
 	
-	public Date getData() {
+	public String getData() {
+		// Formata a data para o padrão brasileiro
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		return data;
 	}
 	
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
+	}
+
+	public Double getInicio() {
+		// Formata a data para o padrão brasileiro
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		return inicio;
+	}
+	
+	public void setInicio(Double inicio) {
+		this.inicio = inicio;
+	}
+
+	public Double getFim() {
+		// Formata a data para o padrão brasileiro
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		return fim;
+	}
+	
+	public void setFim(Double fim) {
+		this.fim = fim;
 	}
 
 }
