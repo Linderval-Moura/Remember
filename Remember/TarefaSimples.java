@@ -2,6 +2,7 @@ package Remember;
 
 import java.util.Date;
 //  implements Observer
+
 public class TarefaSimples extends Componente {
 
     public TarefaSimples() {
