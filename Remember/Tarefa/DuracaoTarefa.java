@@ -1,6 +1,10 @@
-package Remember;
+package Remember.Tarefa;
 
 import java.util.Date;
+
+import Remember.Componente;
+import Remember.Decorator;
+import Remember.Observer;
 
 public class DuracaoTarefa extends Decorator implements Observer {
     

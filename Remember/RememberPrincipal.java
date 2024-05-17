@@ -1,5 +1,7 @@
 package Remember;
 
+import Remember.Tarefa.DuracaoTarefa;
+import Remember.Tarefa.TarefaSimples;
 
 public class RememberPrincipal {
 	public static void main(String[] args) throws InterruptedException {
