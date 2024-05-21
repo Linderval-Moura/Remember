@@ -1,12 +1,10 @@
 package Remember.Tarefa;
 
-import java.util.Date;
-
 import Remember.Componente;
 import Remember.Decorator;
-import Remember.Observer;
+import java.util.Date;
 
-public class DuracaoTarefa extends Decorator implements Observer {
+public class DuracaoTarefa extends Decorator {
     
     public DuracaoTarefa(Componente componente, String descricao, Double inicio, Double fim) {
         super(componente);
@@ -17,19 +15,12 @@ public class DuracaoTarefa extends Decorator implements Observer {
 		this.fim = fim;
     }
 
-	// @Override
-    // public void setDescricao(String novadescricao) {
-    //     descricao = novadescricao + " (das " + inicio + "h às " + fim + "h)";
+    public void atualizar(Double novoinicio) {
 
-    // }
+            this.descricao = descricao + " (das " + novoinicio + "h às " + fim + "h)";
+            this.inicio = novoinicio;
 
-	@Override
-	public void atualizar(Double novoinicio) {
+            System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + inicio);
 
-		this.descricao = descricao + " (das " + novoinicio + "h às " + fim + "h)";
-		this.inicio = novoinicio;
-		
-		System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + inicio);
-    
-	}
+    }
 }

@@ -1,14 +1,14 @@
 package Remember;
 
 import Remember.Tarefa.DuracaoTarefa;
-import Remember.Tarefa.TarefaSimples;
+import Remember.Tarefa.TarefaCustomizavel;
 
 public class RememberPrincipal {
 	public static void main(String[] args) throws InterruptedException {
 		
 		//Componente t = new TarefaComDuracao(new TarefaComDuracao(new TarefaSimples()));
 	
-		Componente t = new TarefaSimples();
+		Componente t = new TarefaCustomizavel();
 		t = new DuracaoTarefa(t, "Terminar testes", 17.30, 18.40);
 		//t.setDescricao("Terminar testes");
 		//((DuracaoTarefa) t).setDescricao("Terminar testes");
