@@ -1,6 +1,7 @@
 package Remember.Tarefa;
 
 import Remember.Componente;
+import Remember.InterfaceFabrica;
 
 public class FabricaDeTarefas implements InterfaceFabrica {
    

@@ -1,6 +1,4 @@
-package Remember.Tarefa;
-
-import Remember.Componente;
+package Remember;
 
 public interface InterfaceFabrica {
     

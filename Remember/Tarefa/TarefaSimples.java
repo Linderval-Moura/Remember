@@ -12,12 +12,5 @@ public class TarefaSimples extends Componente {
 		setDescricao("Terminar a implementação do aplicativo");
 		setData(new Date().toString());
     }
-
-	// @Override
-	// public void atualizar(int data) {
-		
-	// 	System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + data);
-    
-	// }
-
+	
 }

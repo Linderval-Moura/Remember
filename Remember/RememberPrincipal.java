@@ -6,6 +6,9 @@ import Remember.Tarefa.TarefaCustomizavel;
 public class RememberPrincipal {
 	public static void main(String[] args) throws InterruptedException {
 		
+		//HyundaiPopular fab = new HyundaiPopular();
+	
+
 		//Componente t = new TarefaComDuracao(new TarefaComDuracao(new TarefaSimples()));
 	
 		Componente t = new TarefaCustomizavel();

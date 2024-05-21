@@ -1,11 +1,11 @@
 package Remember;
 
 
-public abstract class Decorator extends Componente{
+public abstract class MelhoriaDecorator extends Componente{
 	
 	private Componente componente;
 	
-	public Decorator(Componente componente){
+	public MelhoriaDecorator(Componente componente){
 		this.componente = componente;
 	}
 

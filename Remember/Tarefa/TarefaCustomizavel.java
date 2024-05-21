@@ -13,7 +13,6 @@ public class TarefaCustomizavel extends Componente {
 		setData(new Date().toString());
     }
 
-	// @Override
 	// public void atualizar(int data) {
 		
 	// 	System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + data);

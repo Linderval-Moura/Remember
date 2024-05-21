@@ -1,14 +1,15 @@
 package Remember.Tarefa;
 
-import Remember.Componente;
-import Remember.MelhoriaDecorator;
 import java.util.Date;
 
-public class DuracaoTarefa extends MelhoriaDecorator {
+import Remember.Componente;
+import Remember.MelhoriaDecorator;
+
+public class HabitoTafera extends MelhoriaDecorator {
     
-    public DuracaoTarefa(Componente componente, String descricao, Double inicio, Double fim) {
+    public HabitoTafera(Componente componente, String descricao, Double inicio, Double fim) {
         super(componente);
-		titulo = "Tarefa Com Duracao";
+		titulo = "Tarefa que se tornará um habito";
 		this.descricao = descricao;
         data = new Date().toString();
 		this.inicio = inicio;
@@ -23,4 +24,5 @@ public class DuracaoTarefa extends MelhoriaDecorator {
         System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + inicio);
 
     }
+
 }
