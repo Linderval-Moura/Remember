@@ -1,8 +1,9 @@
-package Remember;
+package Remember.Tarefa;
 
+import Remember.Componente;
 import java.util.Date;
-//  implements Observer
 
+//  implements Observer
 public class TarefaSimples extends Componente {
 
     public TarefaSimples() {
@@ -10,12 +11,5 @@ public class TarefaSimples extends Componente {
 		setDescricao("Terminar a implementação do aplicativo");
 		setData(new Date().toString());
     }
-
-	// @Override
-	// public void atualizar(int data) {
-		
-	// 	System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + data);
-    
-	// }
-
+	
 }

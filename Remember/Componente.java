@@ -1,7 +1,9 @@
 package Remember;
 
-//import java.text.SimpleDateFormat;
-
+/*
+ * Classe para implementar o padrão Decorator
+ * 
+ */
 public class Componente {
 	
 	protected String titulo;
