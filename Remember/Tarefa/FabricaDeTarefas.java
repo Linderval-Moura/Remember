@@ -3,6 +3,10 @@ package Remember.Tarefa;
 import Remember.Componente;
 import Remember.InterfaceFabrica;
 
+/*
+ * Interface para implementar o padrão Factory Method
+ * 
+ */
 public class FabricaDeTarefas implements InterfaceFabrica {
    
     @Override
@@ -13,6 +17,7 @@ public class FabricaDeTarefas implements InterfaceFabrica {
 		
 		else if(e == 2)
 			return new TarefaCustomizavel();
+		
 		return null;
 	}
 }

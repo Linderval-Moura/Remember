@@ -1,8 +1,7 @@
 package Remember.Tarefa;
 
-import java.util.Date;
-
 import Remember.Componente;
+import java.util.Date;
 
 //  implements Observer
 public class TarefaSimples extends Componente {

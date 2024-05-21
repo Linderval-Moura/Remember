@@ -1,7 +1,10 @@
 package Remember;
 
 import Remember.Tarefa.DuracaoTarefa;
+import Remember.Tarefa.HabitoTarefa;
 import Remember.Tarefa.TarefaCustomizavel;
+
+import java.util.EnumSet;
 
 public class RememberPrincipal {
 	public static void main(String[] args) throws InterruptedException {
@@ -15,6 +18,11 @@ public class RememberPrincipal {
 		t = new DuracaoTarefa(t, "Terminar testes", 17.30, 18.40);
 		//t.setDescricao("Terminar testes");
 		//((DuracaoTarefa) t).setDescricao("Terminar testes");
+                
+        // Adicionando o hábito de repetir a tarefa em dias específicos
+
+        t = new HabitoTarefa(t, "Estudar Java", 17.30, 18.40, EnumSet.of(DiaDaSemana.SEGUNDA, DiaDaSemana.QUARTA, DiaDaSemana.DOMINGO));
+
 		
 		System.out.println(t.getTitulo());
 		System.out.println(t.getDescricao() + " (das " + t.getInicio() + "h às " + t.getFim() + "h)");

@@ -8,11 +8,11 @@ public class DuracaoTarefa extends MelhoriaDecorator {
     
     public DuracaoTarefa(Componente componente, String descricao, Double inicio, Double fim) {
         super(componente);
-		titulo = "Tarefa Com Duracao";
-		this.descricao = descricao;
+        titulo = "Tarefa Com Duracao";
+        this.descricao = descricao;
         data = new Date().toString();
-		this.inicio = inicio;
-		this.fim = fim;
+        this.inicio = inicio;
+        this.fim = fim;
     }
 
     public void atualizar(Double novoinicio) {
