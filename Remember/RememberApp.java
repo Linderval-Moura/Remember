@@ -6,8 +6,11 @@ import Remember.Tarefa.TarefaCustomizavel;
 
 import java.util.EnumSet;
 
-public class RememberPrincipal {
+public class RememberApp {
 	public static void main(String[] args) throws InterruptedException {
+		System.out.println("");
+		System.out.println("$$$$$   APP REMEMBER   $$$$$");
+		System.out.println("");
 		
 		//HyundaiPopular fab = new HyundaiPopular();
 	
