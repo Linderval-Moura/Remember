@@ -1,9 +1,9 @@
-package Remember.Tarefa;
+package Remember;
 
-import Remember.Componente;
-import Remember.ConjuntoMelhoriasFactory;
-import Remember.DiaDaSemana;
 import java.util.Set;
+
+import Remember.Tarefa.DuracaoTarefa;
+import Remember.Tarefa.HabitoTarefa;
 
 public class ConjuntoMelhoriasTarefa implements ConjuntoMelhoriasFactory{
 	

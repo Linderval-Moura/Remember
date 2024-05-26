@@ -12,49 +12,23 @@ public class RememberApp {
 		System.out.println("$$$$$   APP REMEMBER   $$$$$");
 		System.out.println("");
 		
-		//HyundaiPopular fab = new HyundaiPopular();
-	
+		FabricaDeTarefas fab = new FabricaDeTarefas();
+		
+		/*Componente c = fab.getCarro(1);
+		c = new MotorPopular(c);
+		c = new CambioPopular(c);*/
 
 		//Componente t = new TarefaComDuracao(new TarefaComDuracao(new TarefaSimples()));
 	
-		Componente t = new TarefaCustomizavel();
-		t = new DuracaoTarefa(t, "Terminar testes", 17.30, 18.40);
-		//t.setDescricao("Terminar testes");
-		//((DuracaoTarefa) t).setDescricao("Terminar testes");
-                
-        // Adicionando o hábito de repetir a tarefa em dias específicos
+		//Componente t = new TarefaCustomizavel();
+		//t = new DuracaoTarefa(t, "Terminar testes", 17.30, 18.40);
 		
-		System.out.println(t.getTitulo());
-		System.out.println(t.getDescricao() + " (das " + t.getInicio() + "h às " + t.getFim() + "h)");
-		System.out.println(t.getData());
-		System.out.println("");
-		
-		Thread.sleep(5000);
-		// Atualizando data com padrão Observer  
-		((DuracaoTarefa) t).atualizar(17.20);
-		
-		if (t instanceof DuracaoTarefa) {
-            ((DuracaoTarefa) t).atualizar(17.20);
-        } else if (t instanceof HabitoTarefa) {
-            ((HabitoTarefa) t).atualizar(17.20);
-        }
-		
-		System.out.println("");
-		System.out.println("#####   T 2   #####");
-		System.out.println("");
-		
-		Componente t2 = new TarefaCustomizavel();
-        t2 = new HabitoTarefa(t2, "Estudar Java", 17.30, 18.40, EnumSet.of(DiaDaSemana.SEGUNDA, DiaDaSemana.QUARTA, DiaDaSemana.DOMINGO));
+		TarefaCustomizavel tCustomizavel = (TarefaCustomizavel)fab.getTarefa(2);
+		Componente c = tCustomizavel.montar();
 
-        System.out.println(t2.getTitulo());
-		System.out.println(t2.getDescricao() + " (das " + t.getInicio() + "h às " + t.getFim() + "h)");
-		System.out.println(t2.getData());
-		System.out.println("");
-		
-		System.out.println(t2.getTitulo());
-		System.out.println(t2.getDescricao());
-		System.out.println(t2.getData());
-		
+		System.out.println(c.getTitulo());
+		System.out.println(c.getDescricao());
+		System.out.println(c.getData());
 		
 		
 	}
