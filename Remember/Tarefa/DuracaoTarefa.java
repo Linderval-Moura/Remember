@@ -10,7 +10,7 @@ public class DuracaoTarefa extends MelhoriaDecorator {
         super(componente);
         titulo = "Tarefa Com Duracao";
         this.descricao = descricao;
-        data = new Date().toString();
+        data = new Date();
         this.inicio = inicio;
         this.fim = fim;
     }

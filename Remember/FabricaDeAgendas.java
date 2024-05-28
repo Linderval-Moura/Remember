@@ -7,12 +7,12 @@ import Remember.Lembrete.LembreteSimples;
  * Interface para implementar o padrão Factory Method
  * 
  */
-public class FabricaDeTarefas implements InterfaceFabrica {
+public class FabricaDeAgendas implements InterfaceFabrica {
 	
-	private ConjuntoMelhoriasFactory melhorias = new ConjuntoMelhoriasTarefa();
+	private ConjuntoMelhoriasFactory melhorias = new ConjuntoMelhoriasAgenda();
    
     @Override
-	public Componente getTarefa(int e) {
+	public Componente getAgenda(int e) {
 
 		if(e == 1)
 			return new LembreteSimples(melhorias);

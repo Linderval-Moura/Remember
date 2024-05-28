@@ -1,3 +1,4 @@
+
 package Remember.Tarefa;
 
 import Remember.Componente;
@@ -6,21 +7,20 @@ import Remember.MelhoriaDecorator;
 import java.util.Date;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.Collections;
 
 public class HabitoTarefa extends MelhoriaDecorator {
-    
-    private Set<DiaDaSemana> diasDaSemana;
-    private Double inicio;
-    private Double fim;
 
+	private Set<DiaDaSemana> diasDaSemana;
+	
     public HabitoTarefa(Componente componente, String descricao, Double inicio, Double fim, Set<DiaDaSemana> diasDaSemana) {
         super(componente);
         this.titulo = "Tarefa com Hábito";
         this.descricao = descricao;
         this.inicio = inicio;
         this.fim = fim;
-        this.diasDaSemana = diasDaSemana;
-        this.data = new Date().toString();
+        this.diasDaSemana = (diasDaSemana != null) ? diasDaSemana : Collections.emptySet();
+        this.data = new Date();
     }
 
     public void atualizar(Double novoinicio) {

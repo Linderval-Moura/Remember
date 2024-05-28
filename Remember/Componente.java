@@ -1,5 +1,11 @@
 package Remember;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Set;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 /*
  * Classe para implementar o padrão Decorator
  * 
@@ -8,10 +14,19 @@ public class Componente {
 	
 	protected String titulo;
 	protected String descricao;
-	protected String data;
+	protected Date data;
 	protected Double inicio;
 	protected Double fim;
+	protected Set<DiaDaSemana> diasDaSemana;
 	
+	public Set<DiaDaSemana> getDiasDaSemana() {
+		return diasDaSemana;
+	}
+
+	public void setDiasDaSemana(Set<DiaDaSemana> diasDaSemana) {
+		this.diasDaSemana = diasDaSemana;
+	}
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -30,32 +45,40 @@ public class Componente {
 	
 	public String getData() {
 		// Formata a data para o padrão brasileiro
-		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		return data;
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return sdf.format(data);
 	}
 	
-	public void setData(String data) {
+	public void setData(Date data) {
 		this.data = data;
 	}
 
-	public Double getInicio() {
+	public String getInicio() {
 		// Formata a data para o padrão brasileiro
-		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		return inicio;
+		return formatarHora(inicio);
 	}
 	
 	public void setInicio(Double inicio) {
 		this.inicio = inicio;
 	}
 
-	public Double getFim() {
+	public String getFim() {
 		// Formata a data para o padrão brasileiro
-		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		return fim;
+		return formatarHora(fim);
 	}
 	
 	public void setFim(Double fim) {
 		this.fim = fim;
 	}
+	
+	
+	private String formatarHora(Double horaDecimal) {
+        if (horaDecimal == null) {
+            return "";
+        }
+        int horas = horaDecimal.intValue();
+        int minutos = (int) ((horaDecimal - horas) * 60);
+        return String.format("%02d:%02d", horas, minutos);
+    }
 
 }

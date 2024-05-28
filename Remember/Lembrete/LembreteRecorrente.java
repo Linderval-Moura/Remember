@@ -1,27 +1,21 @@
 package Remember.Lembrete;
 
-public class LembreteRecorrente extends LembreteSimples {
-    private String periodo;
+import java.util.Set;
 
-    // Construtor
-    public LembreteRecorrente(String descricao, String periodo) {
-        super(descricao);
-        this.periodo = periodo;
+import Remember.Componente;
+import Remember.DiaDaSemana;
+import Remember.MelhoriaDecorator;
+
+public class LembreteRecorrente extends MelhoriaDecorator {
+
+    public LembreteRecorrente (Componente componente, String descricao, Set<DiaDaSemana> diasDaSemana) {
+        super(componente);
+        this.descricao = descricao;
+        this.diasDaSemana = diasDaSemana;
     }
 
-    // Método para obter o período de recorrência
-    public String getPeriodo() {
-        return periodo;
-    }
-
-    // Método para definir o período de recorrência
-    public void setPeriodo(String periodo) {
-        this.periodo = periodo;
-    }
-
-    // Sobrescrita do método toString para incluir o período de recorrência
     @Override
-    public String toString() {
-        return super.toString() + " (Recorrente: " + periodo + ")";
+    public String getDescricao() {
+        return super.getDescricao() + " - Repetir: " + diasDaSemana;
     }
 }

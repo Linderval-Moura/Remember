@@ -7,5 +7,5 @@ public enum DiaDaSemana {
     QUARTA,
     QUINTA,
     SEXTA,
-    SABADO;
+    SABADO
 }

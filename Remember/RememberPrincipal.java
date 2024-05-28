@@ -14,7 +14,7 @@ public class RememberPrincipal {
 
 		//Componente t = new TarefaComDuracao(new TarefaComDuracao(new TarefaSimples()));
 	
-		Componente t = new TarefaCustomizavel();
+		Componente t = new TarefaCustomizavel(null);
 		t = new DuracaoTarefa(t, "Terminar testes", 17.30, 18.40);
 		//t.setDescricao("Terminar testes");
 		//((DuracaoTarefa) t).setDescricao("Terminar testes");
@@ -40,7 +40,7 @@ public class RememberPrincipal {
 		System.out.println("#####   T 2   #####");
 		System.out.println("");
 		
-		Componente t2 = new TarefaCustomizavel();
+		Componente t2 = new TarefaCustomizavel(null);
         t2 = new HabitoTarefa(t2, "Estudar Java", 17.30, 18.40, EnumSet.of(DiaDaSemana.SEGUNDA, DiaDaSemana.QUARTA, DiaDaSemana.DOMINGO));
 
         System.out.println(t2.getTitulo());
