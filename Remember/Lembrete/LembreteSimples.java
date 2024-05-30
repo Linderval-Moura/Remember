@@ -12,7 +12,7 @@ public class LembreteSimples extends Componente  {
     
     public LembreteSimples(ConjuntoMelhoriasFactory melhorias) {
 		this.descricao = "Comprar pão";
-		this.data = new Date().toString();
+		this.data = new Date();
 		this.melhorias = melhorias;
     }
 

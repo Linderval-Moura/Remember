@@ -31,7 +31,6 @@ public class RememberApp {
 		System.out.println(c.getDescricao());
 		System.out.println(c.getData());
 		
-		
 		System.out.println("");
 		System.out.println("$$$$$   APP REMEMBER   $$$$$");
 		System.out.println("LembreteSimples");

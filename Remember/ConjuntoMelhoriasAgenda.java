@@ -1,6 +1,5 @@
 package Remember;
 
-import java.util.Date;
 import java.util.Set;
 
 import Remember.Lembrete.LembreteImportante;

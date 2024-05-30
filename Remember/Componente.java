@@ -3,8 +3,6 @@ package Remember;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Set;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 /*
  * Classe para implementar o padrão Decorator

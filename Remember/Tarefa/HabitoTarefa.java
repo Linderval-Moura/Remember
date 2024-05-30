@@ -5,9 +5,9 @@ import Remember.Componente;
 import Remember.DiaDaSemana;
 import Remember.MelhoriaDecorator;
 import java.util.Date;
+import java.util.EnumSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.Collections;
 
 public class HabitoTarefa extends MelhoriaDecorator {
 
@@ -16,10 +16,9 @@ public class HabitoTarefa extends MelhoriaDecorator {
     public HabitoTarefa(Componente componente, String descricao, Double inicio, Double fim, Set<DiaDaSemana> diasDaSemana) {
         super(componente);
         this.titulo = "Tarefa com Hábito";
-        this.descricao = descricao;
         this.inicio = inicio;
         this.fim = fim;
-        this.diasDaSemana = (diasDaSemana != null) ? diasDaSemana : Collections.emptySet();
+        this.diasDaSemana = EnumSet.of(DiaDaSemana.SEGUNDA, DiaDaSemana.QUARTA, DiaDaSemana.DOMINGO);
         this.data = new Date();
     }
 
