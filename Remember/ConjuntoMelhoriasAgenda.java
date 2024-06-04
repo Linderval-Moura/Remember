@@ -26,8 +26,8 @@ public class ConjuntoMelhoriasAgenda implements ConjuntoMelhoriasFactory{
 	}
 	
 	@Override
-	public Componente setHabito(Componente componente, String descricao, Double inicio, Double fim, Set<DiaDaSemana> diasDaSemana) {
-		return new HabitoTarefa(componente, descricao, inicio, fim, diasDaSemana);
+	public Componente setHabito(Componente componente, String descricao, Set<DiaDaSemana> diasDaSemana) {
+		return new HabitoTarefa(componente, descricao, diasDaSemana);
 	}
 
 }

@@ -10,7 +10,7 @@ import Remember.Tarefa.TarefaCustomizavel;
 public class RememberApp {
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("");
-		System.out.println("$$$$$   APP REMEMBER   $$$$$");
+		System.out.println("$$$$$   TAREFA REMEMBER   $$$$$");
 		System.out.println("TarefaCustomizavel");
 		
 		FabricaDeAgendas fab = new FabricaDeAgendas();
@@ -32,7 +32,7 @@ public class RememberApp {
 		System.out.println(c.getData());
 		
 		System.out.println("");
-		System.out.println("$$$$$   APP REMEMBER   $$$$$");
+		System.out.println("$$$$$   LEMBRETE REMEMBER   $$$$$");
 		System.out.println("LembreteSimples");
 		
 		FabricaDeAgendas fab2 = new FabricaDeAgendas();
