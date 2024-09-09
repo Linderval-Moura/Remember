@@ -6,6 +6,6 @@ package Remember;
  */
 public interface InterfaceFabrica {
     
-    Componente getTarefa(int e);
+    Componente getAgenda(int e);
 
 }

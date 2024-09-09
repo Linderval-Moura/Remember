@@ -1,11 +1,21 @@
 package Remember.Lembrete;
 
-public class LembreteSimples implements Lembrete {
-    private String descricao;
+import java.util.Date;
+import java.util.EnumSet;
 
+import Remember.Componente;
+
+import Remember.ConjuntoMelhoriasFactory;
+import Remember.DiaDaSemana;
+
+public class LembreteSimples extends Componente  {
     
-    public LembreteSimples(String descricao) {
-        this.descricao = descricao;
+    private ConjuntoMelhoriasFactory melhorias;
+    
+    public LembreteSimples(ConjuntoMelhoriasFactory melhorias) {
+		this.descricao = "Lembrar de Comprar Pão";
+		this.data = new Date();
+		this.melhorias = melhorias;
     }
 
     
@@ -13,10 +23,24 @@ public class LembreteSimples implements Lembrete {
         return descricao;
     }
 
-   
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    
+    public Componente montar() {
+
+    	Componente componente = melhorias.setImportancia(this, 
+        "- IMPORTANTE!"
+        );
+
+		componente = melhorias.setRecorrencia(componente, 
+        descricao, 
+        EnumSet.of(DiaDaSemana.DOMINGO, DiaDaSemana.QUARTA, DiaDaSemana.SEXTA, DiaDaSemana.SABADO)
+        );
+    	
+		return componente;
+	}
+
     @Override
     public String toString() {
         return descricao;
