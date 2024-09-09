@@ -1,7 +1,7 @@
 package Remember.Tarefa;
 
 import java.util.Date;
-import Remember.Componente;
+import Remember.PadraoDecorator.Componente;
 import Remember.ConjuntoMelhoriasFactory;
 import java.util.EnumSet;
 import Remember.DiaDaSemana;

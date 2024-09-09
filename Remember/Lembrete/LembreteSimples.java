@@ -3,10 +3,9 @@ package Remember.Lembrete;
 import java.util.Date;
 import java.util.EnumSet;
 
-import Remember.Componente;
-
 import Remember.ConjuntoMelhoriasFactory;
 import Remember.DiaDaSemana;
+import Remember.PadraoDecorator.Componente;
 
 public class LembreteSimples extends Componente  {
     

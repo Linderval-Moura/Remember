@@ -2,9 +2,10 @@ package Remember;
 
 import Remember.Tarefa.TarefaCustomizavel;
 import Remember.Lembrete.LembreteSimples;
+import Remember.PadraoDecorator.Componente;
 
 /*
- * Interface para implementar o padrão Factory Method
+ * Classe Fabrica para implementar o padrão Factory Method
  * 
  */
 public class FabricaDeAgendas implements InterfaceFabrica {

@@ -2,9 +2,9 @@ package Remember.Lembrete;
 
 import java.util.Set;
 
-import Remember.Componente;
 import Remember.DiaDaSemana;
-import Remember.MelhoriaDecorator;
+import Remember.PadraoDecorator.Componente;
+import Remember.PadraoDecorator.MelhoriaDecorator;
 
 public class LembreteRecorrente extends MelhoriaDecorator {
 
@@ -16,6 +16,6 @@ public class LembreteRecorrente extends MelhoriaDecorator {
 
     @Override
     public String getDescricao() {
-        return super.getDescricao() + " - Repetir: " + diasDaSemana;
+        return super.getDescricao() + " - Repetir em: " + diasDaSemana;
     }
 }

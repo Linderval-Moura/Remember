@@ -4,9 +4,14 @@ import java.util.Set;
 
 import Remember.Lembrete.LembreteImportante;
 import Remember.Lembrete.LembreteRecorrente;
-
+import Remember.PadraoDecorator.Componente;
 import Remember.Tarefa.DuracaoTarefa;
 import Remember.Tarefa.HabitoTarefa;
+
+/*
+ * Interface para implementar o padrão Abstract Method
+ * 
+ */
 
 public class ConjuntoMelhoriasAgenda implements ConjuntoMelhoriasFactory{
 

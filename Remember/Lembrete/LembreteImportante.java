@@ -1,7 +1,7 @@
 package Remember.Lembrete;
 
-import Remember.Componente;
-import Remember.MelhoriaDecorator;
+import Remember.PadraoDecorator.Componente;
+import Remember.PadraoDecorator.MelhoriaDecorator;
 
 public class LembreteImportante extends MelhoriaDecorator {
     

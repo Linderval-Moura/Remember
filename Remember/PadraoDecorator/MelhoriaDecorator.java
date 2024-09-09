@@ -1,4 +1,4 @@
-package Remember;
+package Remember.PadraoDecorator;
 
 /*
  * Classe para implementar o padrão Decorator
