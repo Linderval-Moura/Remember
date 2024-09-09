@@ -1,18 +1,20 @@
 package Remember;
 
-import java.util.Date;
-
-public abstract class Decorator extends Componente{
+/*
+ * Classe para implementar o padrão Decorator
+ * 
+ */
+public abstract class MelhoriaDecorator extends Componente{
 	
 	private Componente componente;
 	
-	public Decorator(Componente componente){
+	public MelhoriaDecorator(Componente componente){
 		this.componente = componente;
 	}
 
 	@Override
 	public String getTitulo() {
-		return  titulo + componente.getTitulo();
+		return componente.getTitulo() +", " +titulo;
 	}
 	
 	@Override
@@ -21,7 +23,7 @@ public abstract class Decorator extends Componente{
 	}
 	
 	@Override
-	public Date getData() {
+	public String getData() {
 		return componente.getData();
 	}
 
