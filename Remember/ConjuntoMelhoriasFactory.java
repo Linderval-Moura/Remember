@@ -2,6 +2,8 @@ package Remember;
 
 import java.util.Set;
 
+import Remember.PadraoDecorator.Componente;
+
 public interface ConjuntoMelhoriasFactory {
 	
 	Componente setDuracao(Componente componente, String descricao, Double inicio, Double fim);

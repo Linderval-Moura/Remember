@@ -1,9 +1,10 @@
 
 package Remember.Tarefa;
 
-import Remember.Componente;
 import Remember.DiaDaSemana;
-import Remember.MelhoriaDecorator;
+import Remember.PadraoDecorator.Componente;
+import Remember.PadraoDecorator.MelhoriaDecorator;
+
 import java.util.Set;
 //import java.util.stream.Collectors;
 
@@ -24,7 +25,7 @@ public class HabitoTarefa extends MelhoriaDecorator {
 
     @Override
     public String getDescricao() {
-        return super.getDescricao() + " - Repetir em: " + diasDaSemana;
+        return super.getDescricao() + " - Repetir hábito em: " + diasDaSemana;
     }
 
     // private String getDiasDaSemanaComoString() {
