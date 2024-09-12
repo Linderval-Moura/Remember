@@ -1,6 +1,7 @@
 package Remember;
 
 import Remember.Lembrete.LembreteSimples;
+import Remember.PadraoDecorator.Componente;
 //import Remember.Tarefa.DuracaoTarefa;
 //import Remember.Tarefa.HabitoTarefa;
 import Remember.Tarefa.TarefaCustomizavel;
@@ -41,8 +42,9 @@ public class RememberApp {
         
         Componente lembreteMelhorado = lembrete.montar();
 
-        System.out.println(lembreteMelhorado.getDescricao());
-		
+        //System.out.println(lembreteMelhorado.getDescricao());
+		System.out.println(lembreteMelhorado.getDescricao());
+		System.out.println(lembreteMelhorado.getData());
 	}
 
 }

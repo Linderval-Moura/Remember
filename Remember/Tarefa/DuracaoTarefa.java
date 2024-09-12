@@ -1,7 +1,7 @@
 package Remember.Tarefa;
 
-import Remember.Componente;
-import Remember.MelhoriaDecorator;
+import Remember.PadraoDecorator.Componente;
+import Remember.PadraoDecorator.MelhoriaDecorator;
 
 public class DuracaoTarefa extends MelhoriaDecorator {
     

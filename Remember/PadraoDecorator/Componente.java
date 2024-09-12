@@ -1,8 +1,10 @@
-package Remember;
+package Remember.PadraoDecorator;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Set;
+
+import Remember.DiaDaSemana;
 
 /*
  * Classe para implementar o padrão Decorator
@@ -26,7 +28,7 @@ public class Componente {
 	}
 
 	public String getTitulo() {
-		return titulo;
+		return "\nTitulo: " + titulo;
 	}
 
 	public void setTitulo(String titulo) {
@@ -34,7 +36,7 @@ public class Componente {
 	}
 	
 	public String getDescricao() {
-		return descricao;
+		return "\nDescrição: " + descricao;
 	}
 	
 	public void setDescricao(String descricao) {
@@ -44,7 +46,7 @@ public class Componente {
 	public String getData() {
 		// Formata a data para o padrão brasileiro
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        return sdf.format(data);
+        return "\nData: " + sdf.format(data);
 	}
 	
 	public void setData(Date data) {
