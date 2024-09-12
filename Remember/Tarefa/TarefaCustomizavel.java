@@ -34,7 +34,7 @@ public class TarefaCustomizavel extends Componente {
 
 	}
 
-	// public void atualizar(int data) {
+	// public void atualizar(int data) { Essa parte não será usada
 		
 	// 	System.out.println("Tarefa: " + titulo + " - " + descricao + " - Início: " + data);
     
