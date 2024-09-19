@@ -6,10 +6,14 @@ import Remember.DiaDaSemana;
 import Remember.PadraoDecorator.Componente;
 import Remember.PadraoDecorator.MelhoriaDecorator;
 
+/*
+ * Classe Decorator
+ */
 public class LembreteRecorrente extends MelhoriaDecorator {
 
     public LembreteRecorrente (Componente componente, String descricao, Set<DiaDaSemana> diasDaSemana) {
         super(componente);
+        this.titulo = "Recorrente";
         this.descricao = descricao;
         this.diasDaSemana = diasDaSemana;
     }

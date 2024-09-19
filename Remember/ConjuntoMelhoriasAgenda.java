@@ -9,10 +9,8 @@ import Remember.Tarefa.DuracaoTarefa;
 import Remember.Tarefa.HabitoTarefa;
 
 /*
- * Interface para implementar o padrão Abstract Method
- * 
+ * Classe para implementar o padrão Abstract Method
  */
-
 public class ConjuntoMelhoriasAgenda implements ConjuntoMelhoriasFactory{
 
 	@Override
