@@ -3,6 +3,9 @@ package Remember.Tarefa;
 import Remember.PadraoDecorator.Componente;
 import Remember.PadraoDecorator.MelhoriaDecorator;
 
+/*
+ * Classe Decorator
+ */
 public class DuracaoTarefa extends MelhoriaDecorator {
     
     public DuracaoTarefa(Componente componente, String descricao, Double inicio, Double fim) {

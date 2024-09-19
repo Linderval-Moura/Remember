@@ -6,8 +6,10 @@ import Remember.PadraoDecorator.Componente;
 import Remember.PadraoDecorator.MelhoriaDecorator;
 
 import java.util.Set;
-//import java.util.stream.Collectors;
 
+/*
+ * Classe Decorator
+ */
 public class HabitoTarefa extends MelhoriaDecorator {
 	
     public HabitoTarefa(Componente componente, String descricao, Set<DiaDaSemana> diasDaSemana) {
@@ -27,10 +29,6 @@ public class HabitoTarefa extends MelhoriaDecorator {
     public String getDescricao() {
         return super.getDescricao() + " - Repetir hábito em: " + diasDaSemana;
     }
-
-    // private String getDiasDaSemanaComoString() {
-    //     return diasDaSemana.stream().map(Enum::name).collect(Collectors.joining(", "));
-    // }
 }
 
 

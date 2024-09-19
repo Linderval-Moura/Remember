@@ -1,50 +1,40 @@
 package Remember;
 
-import Remember.Lembrete.LembreteSimples;
+import Remember.Lembrete.Lembrete;
 import Remember.PadraoDecorator.Componente;
-//import Remember.Tarefa.DuracaoTarefa;
-//import Remember.Tarefa.HabitoTarefa;
-import Remember.Tarefa.TarefaCustomizavel;
+import Remember.Tarefa.Tarefa;
 
-//import java.util.EnumSet;
-
+/*
+ * Classe Principal
+ */
 public class RememberApp {
-	public static void main(String[] args) throws InterruptedException {
-		System.out.println("");
-		System.out.println("$$$$$   TAREFA REMEMBER   $$$$$");
-		System.out.println("TarefaCustomizavel");
+	public static void main(String[] args) {
+		System.out.println(" ");
+		System.out.println("!!!!!   TAREFA REMEMBER   !!!!!");
+		System.out.println("Tarefa");
 		
 		FabricaDeAgendas fab = new FabricaDeAgendas();
 		
-		/*Componente c = fab.getCarro(1);
-		c = new MotorPopular(c);
-		c = new CambioPopular(c);*/
-
-		//Componente t = new TarefaComDuracao(new TarefaComDuracao(new TarefaSimples()));
-	
-		//Componente t = new TarefaCustomizavel();
-		//t = new DuracaoTarefa(t, "Terminar testes", 17.30, 18.40);
-		
-		TarefaCustomizavel tCustomizavel = (TarefaCustomizavel)fab.getAgenda(2);
-		Componente c = tCustomizavel.montar();
+		Tarefa tarefaMelorada = (Tarefa)fab.getAgenda(2);
+		Componente c = tarefaMelorada.montar();
 
 		System.out.println(c.getTitulo());
 		System.out.println(c.getDescricao());
 		System.out.println(c.getData());
 		
-		System.out.println("");
-		System.out.println("$$$$$   LEMBRETE REMEMBER   $$$$$");
-		System.out.println("LembreteSimples");
+		System.out.println(" ");
+		System.out.println("!!!!!   LEMBRETE REMEMBER   !!!!!");
+		System.out.println("Lembrete");
 		
 		FabricaDeAgendas fab2 = new FabricaDeAgendas();
 		
-        LembreteSimples lembrete = (LembreteSimples)fab2.getAgenda(1);
+        Lembrete lembreteMelorado = (Lembrete)fab2.getAgenda(1);
         
-        Componente lembreteMelhorado = lembrete.montar();
+        Componente c2 = lembreteMelorado.montar();
 
-        //System.out.println(lembreteMelhorado.getDescricao());
-		System.out.println(lembreteMelhorado.getDescricao());
-		System.out.println(lembreteMelhorado.getData());
+		System.out.println(c2.getTitulo());
+		System.out.println(c2.getDescricao());
+		System.out.println(c2.getData());
 	}
 
 }

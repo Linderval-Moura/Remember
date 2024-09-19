@@ -8,7 +8,6 @@ import Remember.DiaDaSemana;
 
 /*
  * Classe para implementar o padrão Decorator
- * 
  */
 public class Componente {
 	

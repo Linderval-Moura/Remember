@@ -4,6 +4,9 @@ import java.util.Set;
 
 import Remember.PadraoDecorator.Componente;
 
+/*
+ * Interface para implementar o padrão Abstract Method
+ */
 public interface ConjuntoMelhoriasFactory {
 	
 	Componente setDuracao(Componente componente, String descricao, Double inicio, Double fim);
